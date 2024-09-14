@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatima Mensaje</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="hearts-container">
+    <div class="heart" style="top: 20%; left: 10%; animation-duration: 6s;"></div>
+    <div class="heart" style="top: 50%; left: 30%; animation-duration: 7s;"></div>
+    <div class="heart" style="top: 80%; left: 70%; animation-duration: 5s;"></div>
+    <div class="heart" style="top: 40%; left: 90%; animation-duration: 8s;"></div>
+    <div class="heart" style="top: 60%; left: 50%; animation-duration: 6s;"></div>
+</div>
+
+<div class="card">
+    <h2>Gracias por escucharme y dejarme hablar las cosas contigo</h2>
+    <button class="button" onclick="showMessage()">Dale click altoque bastarditA</button>
+
+    <div class="message" id="message">
+        <p>
+            Fatima sé que en su momento te agradecí, pero siento que no lo hice como realmente lo quería hacer.
+            Quiero decirte gracias desde el coroco, porque lo que hiciste significó mucho para mi.
+            Nunca me había abierto por completo hacia alguien, donde no me molestaba si me veías mal, llorando o teniendo
+            cualquier tipo de emoción, y cuando me dijiste lo de la facu, me puse rojito por lo bonito que fue escucharte
+            y las palabras que dijiste. En ese momento solo quería abrazarte y no soltarte hasta quedarme dormido llorando
+            contigo. No sé si notaste, en ese momento un ratito después de eso me puse a llorar un poquito, y aunque
+            mencionaste algo como “Si te lo digo, se te va a subir el ego,” contigo no tengo el porqué de hacerlo para querer
+            dejarte mal, bajo de mí o querer ser más, quiero que seamos algo bonito hablando bien las cosas. Te amo mucho, y no
+            quiero que nada de eso sea malo.
+        </p>
+        <p>
+            Las palabras que me dijiste me llegaron demasiado al coroco, cuando me consolaste cuando te hablé lo de mi ama,
+            solo quería derrumbarme ante ti y pucha, querer llorar contigo acostado en tus piernas, tus hombros o en tu pecho
+            para solo después cuando se pase todo y expulse todo, quedarme dormido. Gracias por estar ahí para escucharme, por
+            entenderme y dejar desahogarme. Nunca me había sentido tan bien, comodo y ni tan libre para abrirme de esta manera con
+            alguien. Lloré mucho esa noche y de verdad, te agradezco más que la ñoña.
+        </p>
+        <p>
+            Lamento las veces que te hice pasar malos ratos o si te hice sobrepensar las cosas. Desde que me comentaste de que
+            nosotros no sabemos lo que siente o pasa a cada uno, es mejor hablar lo que sentimos antes de arreglar, dialogar o
+            ver qué pasa, antes de ir a la discusión que tenemos en caso hipotético. Me gusta que tengamos esa comunicación,
+            siento que es demasiado genuina y buena donde podemos hablar muy bien las cosas y de cualquier cosa. Literalmente
+            no se me ocurren más palabras de las que pueda decir lo mucho que estoy agradecido contigo, el aprecio, el consuelo
+            que me diste por lo de la facu pucha que lo sentí muy bonito.
+        </p>
+        <p>
+            Te amo mucho pero mucho Fatima, te quiero demasiado
+            y gracias por esto, eres alguien muy especial bastardita para mi <33
+        </p>
+
+        <!-- Fotos Fatikeke -->
+        <div class="photo-gallery">
+            <img src="Fatikeke.png" alt="Foto 1">
+            <img src="Fatikeke2.jpg" alt="Foto 2">
+            <img src="Fatikeke3.jpg" alt="Foto 3">
+        </div>
+
+        <!-- Key Fatikeke -->
+        <div class="secret-trigger" onclick="toggleSecret()">🗝️</div>
+        <div class="secret-message" id="secretMessage">
+            <p>Te amo muito muito bastardita, espero algun dia nos podamos ver en persona para darte un abrazitO <3 </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showMessage() {
+        var message = document.getElementById('message');
+        if (message.style.display === 'none' || message.style.display === '') {
+            message.style.display = 'block';
+        } else {
+            message.style.display = 'none';
+        }
+    }
+
+    function toggleSecret() {
+        var secret = document.getElementById('secretMessage');
+        if (secret.style.display === 'none' || secret.style.display === '') {
+            secret.style.display = 'block';
+        } else {
+            secret.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
